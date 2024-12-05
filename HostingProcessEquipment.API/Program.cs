@@ -1,3 +1,4 @@
+using HostingProcessEquipment.API.Extensions;
 using HostingProcessEquipment.API.Infrastructure;
 using HostingProcessEquipment.Application;
 using HostingProcessEquipment.Infrastructure;
@@ -37,7 +38,8 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+builder.Services.AddSwaggerWithSecurityKey();
 
 var app = builder.Build();
 
@@ -52,6 +54,8 @@ app.UseExceptionHandler();
 app.UseCors("AllowOrigin");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
+
+app.UseMiddleware<SecurityMiddleware>();
 
 app.UseAuthorization();
 
