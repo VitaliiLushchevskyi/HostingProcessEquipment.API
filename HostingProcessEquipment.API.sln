@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingProcessEquipment.API", "HostingProcessEquipment.API\HostingProcessEquipment.API.csproj", "{F95B6E48-0270-4FE5-A17D-490235465BF5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingProcessEquipment.API", "HostingProcessEquipment.API\HostingProcessEquipment.API.csproj", "{F95B6E48-0270-4FE5-A17D-490235465BF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingProcessEquipment.Application", "HostingProcessEquipment.Application\HostingProcessEquipment.Application.csproj", "{4B0A1A5D-4493-4BC6-B895-5793CDD31882}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingProcessEquipment.Application", "HostingProcessEquipment.Application\HostingProcessEquipment.Application.csproj", "{4B0A1A5D-4493-4BC6-B895-5793CDD31882}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingProcessEquipment.Domain", "HostingProcessEquipment.Domain\HostingProcessEquipment.Domain.csproj", "{50B96E5A-3D98-4C7B-842E-328214225164}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingProcessEquipment.Domain", "HostingProcessEquipment.Domain\HostingProcessEquipment.Domain.csproj", "{50B96E5A-3D98-4C7B-842E-328214225164}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingProcessEquipment.Infrastructure", "HostingProcessEquipment.Infrastructure\HostingProcessEquipment.Infrastructure.csproj", "{84C6BB54-E97F-4DB1-B37D-3997CF9385F8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HostingProcessEquipment.Infrastructure", "HostingProcessEquipment.Infrastructure\HostingProcessEquipment.Infrastructure.csproj", "{84C6BB54-E97F-4DB1-B37D-3997CF9385F8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HostingProcessEquipment.Tests", "HostingProcessEquipment.Tests\HostingProcessEquipment.Tests.csproj", "{66ED2A3A-4771-4E63-9E84-0139094D15EF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{84C6BB54-E97F-4DB1-B37D-3997CF9385F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{84C6BB54-E97F-4DB1-B37D-3997CF9385F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{84C6BB54-E97F-4DB1-B37D-3997CF9385F8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{66ED2A3A-4771-4E63-9E84-0139094D15EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{66ED2A3A-4771-4E63-9E84-0139094D15EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{66ED2A3A-4771-4E63-9E84-0139094D15EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{66ED2A3A-4771-4E63-9E84-0139094D15EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
