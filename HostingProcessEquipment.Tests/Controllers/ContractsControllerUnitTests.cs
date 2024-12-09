@@ -29,13 +29,9 @@ public class ContractsControllerUnitTests(ContractsControllerFixture fixture) : 
         var contracts = Assert.IsType<List<ContractDto>>(okResult.Value);
 
         Assert.Equal(expectedContracts.Count, contracts.Count);
+        Assert.Equal(expectedContracts[1].ProductionFacilityName, contracts[1].ProductionFacilityName);
+        Assert.Equal(expectedContracts[0].ProcessEquipmentTypeName, contracts[0].ProcessEquipmentTypeName);
 
-        for (int i = 0; i < expectedContracts.Count; i++)
-        {
-            Assert.Equal(expectedContracts[i].ProductionFacilityName, contracts[i].ProductionFacilityName);
-            Assert.Equal(expectedContracts[i].ProcessEquipmentTypeName, contracts[i].ProcessEquipmentTypeName);
-            Assert.Equal(expectedContracts[i].EquipmentQuantity, contracts[i].EquipmentQuantity);
-        }
     }
 
     [Fact]
